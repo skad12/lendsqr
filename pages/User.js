@@ -4,12 +4,15 @@ import SideNav from '../components/SideNav';
 import Cards from '../components/Cards';
 import Tables from '../components/Tables';
 import Pagination from '../components/Pagination'
+import UserHeader from '../components/UserHeader';
+import Tabs from '../components/TabUser';
+import TabUser from '../components/TabUser';
 
 
-const Dash = () => {
+const User = () => {
     return ( 
 
-        <div className="antialiased min-h-screen" >
+        <div className="antialiased min-h-screen font-sans" >
 
          <Nav />
           
@@ -19,9 +22,8 @@ const Dash = () => {
     <SideNav/>
   </div>
   <div class="flex-1 bg-gray-100 ">
-    <Cards />
-    <Tables />
-    <Pagination />
+    <UserHeader />
+    <TabUser />
   </div>
 </div>      
 </div>
@@ -29,5 +31,5 @@ const Dash = () => {
      );
 }
  
-export default Dash;
+export default User;
 
