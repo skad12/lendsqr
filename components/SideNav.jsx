@@ -7,8 +7,8 @@ function Side() {
     return ( 
 
         <>
-        <div>
-  <ul className="relative pt-5 font-semibold font-sans">
+        <div className='font-sans  '>
+  <ul className="relative pt-5 font-semibold ">
     <li className="relative  ">
       <a className="flex space-x-2 items-center text-sm py-4 px-6 h-12 overflow-hidden text-gray-700 text-ellipsis whitespace-nowrap rounded hover:text-gray-900 hover:bg-gray-100 transition duration-300 ease-in-out" href="#!" data-mdb-ripple="true" data-mdb-ripple-color="dark">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="w-4 h-4">
@@ -34,7 +34,7 @@ function Side() {
   </ul>
 
 {/* customers */}
-  <ul className="relative pt-5 font-semibold">
+  <ul className="relative pt-5 font-semibold ">
     <label className='text-xs pl-6 text-gray-700 '>CUSTOMERS</label>
     <li className="relative  ">
       <Link href='./User'>

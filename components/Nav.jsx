@@ -9,7 +9,7 @@ function Nav() {
     return (
         
         <>
-         <div className='flex h-16 w-full justify-around border-b pt-4 font-sans'>
+         <div className='flex h-16 w-full justify-between hidden md:block px-5   pt-4  '>
            
            <div className=" flex justify-between pb-5 font-bold space-x-2 ">
            <div><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="w-5 h-8">
@@ -23,10 +23,10 @@ function Nav() {
            
            <div className="form-control ">
      <div className="input-group flex">
-       <input type="text" placeholder="Search for anything" className="input input-bordered text-xs h- w-64 border rounded-l-md pl-4 " />
+       <input type="text" placeholder="Search for anything" className="input input-bordered text-xs h-7 w-64 border rounded-l-md pl-4 " />
        <div className=' bg-cyan-300 rounded-r-md'>
        <button className="btn btn-square   ">
-         <svg xmlns="http://www.w3.org/2000/svg" className="h-3 w-8  " fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" /></svg>
+         <svg xmlns="http://www.w3.org/2000/svg" className="h-3 w-8 " fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" /></svg>
        </button>
        </div>
      </div>
@@ -48,7 +48,7 @@ function Nav() {
      </div>
    </div>
  
-   <div className='text-sm pt-2 font-sm'>Adedeji</div>
+   <div className='text-sm pt-2 font-'>Adedeji</div>
    <div>
    <Dropdown />
    </div>
