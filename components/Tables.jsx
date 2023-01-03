@@ -10,7 +10,7 @@ function Tables() {
      
 
 <section className="py-8 bg-blueGray-50">
-  <div className="container  mx-auto">
+  <div className="  mx-auto">
     <div className="p-7 pb-12 pt-12  rounded-5xl">
      
       <div className="overflow-x-auto">
@@ -18,9 +18,9 @@ function Tables() {
           <table className=" table-auto px-16 w-full bg-white">
             <thead>
               <tr>
-                <th className="pl-10 xl:pl-24 h-20 bg-white text-left flex space-x-2  ">
+                <th className="p-5 h-20 bg-white  ">
                   <span className="block text-xs text-body text-opacity-40 font-sans font-semibold uppercase min-w-max">Organization</span>
-                  <Filter />
+                  
                 </th>
                 <th className="p-5 h-20 bg-white">
                   <span className="block text-xs text-body text-opacity-40 font-heading font-semibold uppercase min-w-max">username</span>
@@ -35,11 +35,11 @@ function Tables() {
                 
                 <th className="p-5 h-20 bg-white">
                   <span className="block text-xs text-body text-opacity-40 font-heading font-semibold uppercase min-w-max">Date joined</span>
-                  <Filter />
+                 
                 </th>
                 <th className="p-5 h-20 bg-white">
                   <span className="block text-xs text-body text-opacity-40 font-heading font-semibold uppercase min-w-max">Status</span>
-                  <Filter />
+                  
                 </th>
               </tr>
             </thead>

@@ -1,64 +1,212 @@
-import React from 'react';
-import Image from 'next/image';
+import {React, useState} from 'react';
+import Link from 'next/link';
+import { Avatar } from '@mui/material';
 import Dropdown from '../components/Dropdown';
 
 
+export default function Nav() {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
 
+  return (
+    <div className="bg-white">
+      <div className="px-4 py-3 mx-auto sm:max-w-xl md:max-w-full md:px-24 lg:px-8 justify-end">
+        <div className="relative flex items-center justify-between">
+          <a
+            href="#"
+            aria-label=""
+            title=""
+            className="inline-flex items-center"
+          >
+            <svg
+              className="w-4 h-4 text-blue-900"
+              viewBox="0 0 24 24"
+              strokeLinejoin="round"
+              strokeWidth="2"
+              strokeLinecap="round"
+              strokeMiterlimit="10"
+              stroke="currentColor"
+              fill="none"
+            >
+              <rect x="3" y="1" width="7" height="12" />
+              <rect x="3" y="17" width="7" height="6" />
+              <rect x="14" y="1" width="7" height="6" />
+              <rect x="14" y="11" width="7" height="12" />
+            </svg>
+            <span className="ml-2  font-bold tracking-wide text-blue-900 ">
+              Lendsqr
+            </span>
+          </a>
 
-function Nav() {
-    return (
-        
-        <>
-         <div className='flex h-16 w-full justify-between hidden md:block px-5   pt-4  '>
-           
-           <div className=" flex justify-between pb-5 font-bold space-x-2 ">
-           <div><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="w-5 h-8">
-     <path d="M12 7.5a2.25 2.25 0 100 4.5 2.25 2.25 0 000-4.5z" />
-     <path fillRule="evenodd" d="M1.5 4.875C1.5 3.839 2.34 3 3.375 3h17.25c1.035 0 1.875.84 1.875 1.875v9.75c0 1.036-.84 1.875-1.875 1.875H3.375A1.875 1.875 0 011.5 14.625v-9.75zM8.25 9.75a3.75 3.75 0 117.5 0 3.75 3.75 0 01-7.5 0zM18.75 9a.75.75 0 00-.75.75v.008c0 .414.336.75.75.75h.008a.75.75 0 00.75-.75V9.75a.75.75 0 00-.75-.75h-.008zM4.5 9.75A.75.75 0 015.25 9h.008a.75.75 0 01.75.75v.008a.75.75 0 01-.75.75H5.25a.75.75 0 01-.75-.75V9.75z" clipRule="evenodd" />
-     <path d="M2.25 18a.75.75 0 000 1.5c5.4 0 10.63.722 15.6 2.075 1.19.324 2.4-.558 2.4-1.82V18.75a.75.75 0 00-.75-.75H2.25z" />
-   </svg>
-   </div>
-         <div className="text-blue-800 text-xl">Lendsqr</div>
-           </div>
-           
-           <div className="form-control ">
-     <div className="input-group flex">
-       <input type="text" placeholder="Search for anything" className="input input-bordered text-xs h-7 w-64 border rounded-l-md pl-4 " />
-       <div className=' bg-cyan-300 rounded-r-md'>
-       <button className="btn btn-square   ">
-         <svg xmlns="http://www.w3.org/2000/svg" className="h-3 w-8 " fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" /></svg>
-       </button>
-       </div>
-     </div>
-   </div>
-   
-   <div className='flex space-x-6 text-blue-800'>
-   <div className='text-xs pt-3'><a href='./'>Docs</a></div>
-   <div><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-5 h-10">
-     <path strokeLinecap="round" strokeLinejoin="round" d="M14.857 17.082a23.848 23.848 0 005.454-1.31A8.967 8.967 0 0118 9.75v-.7V9A6 6 0 006 9v.75a8.967 8.967 0 01-2.312 6.022c1.733.64 3.56 1.085 5.455 1.31m5.714 0a24.255 24.255 0 01-5.714 0m5.714 0a3 3 0 11-5.714 0" />
-   </svg></div>
-   
-   <div className='flex space-x-2'>
-   
-   <div className="avatar">
-     <div className=" rounded-full ">
-       <Image 
-       src="https://images.unsplash.com/photo-1570295999919-56ceb5ecca61?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=880&q=80" 
-       alt='/' width={36} height={36} className='rounded-full' />
-     </div>
-   </div>
- 
-   <div className='text-sm pt-2 font-'>Adedeji</div>
-   <div>
-   <Dropdown />
-   </div>
-   
-   </div>
-   </div>
+          <div className="flex items-center hidden  md:block  space-x-8 lg:flex">
+          <div className="flex items-center justify-center">
+    <div className="flex border-2 rounded">
+        <input type="text" className="px-4 py-2 w-96 h-7 text-xs" placeholder="Search for anything" />
+        <button className="flex items-center justify-center px-3 border-l bg-cyan-400">
+            <svg className="w-5 h-6 text-gray-600 " fill="currentColor" xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24">
+                <path
+                    d="M16.32 14.9l5.39 5.4a1 1 0 0 1-1.42 1.4l-5.38-5.38a8 8 0 1 1 1.41-1.41zM10 16a6 6 0 1 0 0-12 6 6 0 0 0 0 12z" />
+            </svg>
+        </button>
     </div>
-        
-        </>
-    );
-}
+</div>
+          </div>
 
-export default Nav;
+
+          <div className="flex items-end hidden  lg:flex ">
+            <div>
+              <a
+                href=""
+                aria-label=""
+                title=""
+                className='flex space-x-7'
+              >
+                <span className='text-sm pt-2'>Docs</span>
+                <span><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-5 h-10">
+                <path strokeLinecap="round" strokeLinejoin="round" d="M14.857 17.082a23.848 23.848 0 005.454-1.31A8.967 8.967 0 0118 9.75v-.7V9A6 6 0 006 9v.75a8.967 8.967 0 01-2.312 6.022c1.733.64 3.56 1.085 5.455 1.31m5.714 0a24.255 24.255 0 01-5.714 0m5.714 0a3 3 0 11-5.714 0" />
+              </svg>
+              </span>
+              <span className='flex space-x-2 '><Avatar
+                alt="Remy Sharp"
+                src="/static/images/avatar/1.jpg"
+                sx={{ width: 36, height: 36 }}/>
+                <Dropdown />
+                </span> 
+
+                     
+              </a>
+            </div>
+          </div>
+
+          <div className="md:hidden">
+            <button
+              aria-label="Open Menu"
+              title="Open Menu"
+              className="p-2 -mr-1 transition duration-200 rounded focus:outline-none focus:shadow-outline"
+              onClick={() => setIsMenuOpen(true)}
+            >
+              <svg className="w-5 text-gray-600" viewBox="0 0 24 24">
+                <path
+                  fill="currentColor"
+                  d="M23,13H1c-0.6,0-1-0.4-1-1s0.4-1,1-1h22c0.6,0,1,0.4,1,1S23.6,13,23,13z"
+                />
+                <path
+                  fill="currentColor"
+                  d="M23,6H1C0.4,6,0,5.6,0,5s0.4-1,1-1h22c0.6,0,1,0.4,1,1S23.6,6,23,6z"
+                />
+                <path
+                  fill="currentColor"
+                  d="M23,20H1c-0.6,0-1-0.4-1-1s0.4-1,1-1h22c0.6,0,1,0.4,1,1S23.6,20,23,20z"
+                />
+              </svg>
+            </button>
+            {isMenuOpen && (
+              <div className="absolute top-0 left-0 w-full">
+                <div className="p-5 bg-white border rounded shadow-sm">
+                  <div className="flex items-center justify-between mb-4">
+                    <div>
+                      <a
+                        href=""
+                        aria-label="Company"
+                        title="Company"
+                        className="inline-flex items-center"
+                      >
+                        <svg
+                          className="w-8 text-deep-purple-accent-400"
+                          viewBox="0 0 24 24"
+                          strokeLinejoin="round"
+                          strokeWidth="2"
+                          strokeLinecap="round"
+                          strokeMiterlimit="10"
+                          stroke="currentColor"
+                          fill="none"
+                        >
+                          <rect x="3" y="1" width="7" height="12" />
+                          <rect x="3" y="17" width="7" height="6" />
+                          <rect x="14" y="1" width="7" height="6" />
+                          <rect x="14" y="11" width="7" height="12" />
+                        </svg>
+                        <span className="ml-2 text-xl font-bold tracking-wide text-gray-800 uppercase">
+                          Company
+                        </span>
+                      </a>
+                    </div>
+                    <div>
+                      <button
+                        aria-label="Close Menu"
+                        title="Close Menu"
+                        className="p-2 -mt-2 -mr-2 transition duration-200 rounded hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
+                        onClick={() => setIsMenuOpen(false)}
+                      >
+                        <svg className="w-5 text-gray-600" viewBox="0 0 24 24">
+                          <path
+                            fill="currentColor"
+                            d="M19.7,4.3c-0.4-0.4-1-0.4-1.4,0L12,10.6L5.7,4.3c-0.4-0.4-1-0.4-1.4,0s-0.4,1,0,1.4l6.3,6.3l-6.3,6.3 c-0.4,0.4-0.4,1,0,1.4C4.5,19.9,4.7,20,5,20s0.5-0.1,0.7-0.3l6.3-6.3l6.3,6.3c0.2,0.2,0.5,0.3,0.7,0.3s0.5-0.1,0.7-0.3 c0.4-0.4,0.4-1,0-1.4L13.4,12l6.3-6.3C20.1,5.3,20.1,4.7,19.7,4.3z"
+                          />
+                        </svg>
+                      </button>
+                    </div>
+                  </div>
+                  <nav>
+                    <ul className="space-y-4">
+                      <li>
+                        <a
+                          href=""
+                          aria-label="Our product"
+                          title="Our product"
+                          className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
+                        >
+                          Product
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          href=""
+                          aria-label="Our product"
+                          title="Our product"
+                          className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
+                        >
+                          Features
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          href=""
+                          aria-label="Product pricing"
+                          title="Product pricing"
+                          className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
+                        >
+                          Pricing
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          href=""
+                          aria-label="About us"
+                          title="About us"
+                          className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
+                        >
+                          About us
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          href=""
+                          className="inline-flex items-center justify-center w-full h-12 px-6 font-medium tracking-wide text-white transition duration-200 rounded shadow-md bg-deep-purple-accent-400 hover:bg-deep-purple-accent-700 focus:shadow-outline focus:outline-none"
+                          aria-label="Sign up"
+                          title="Sign up"
+                        >
+                          Sign up
+                        </a>
+                      </li>
+                    </ul>
+                  </nav>
+                </div>
+              </div>
+            )}
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+};

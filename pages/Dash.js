@@ -8,10 +8,10 @@ import Pagination from '../components/Pagination';
 const Dash = () => {
     return ( 
 
-        <div className="antialiased min-h-screen" >
+        <div className="antialiased" >
 
          
-          <div className='hidden md:block'>
+          <div className=''>
             <Nav />
             </div>
          

@@ -15,7 +15,7 @@
     "@material-tailwind/react": "^1.2.4",
     "@material-ui/pickers": "^3.3.10",
     "@mui/icons-material": "^5.11.0",
-    "@mui/material": "^5.11.2",
+    "@mui/material": "^5.11.3",
     "@mui/x-date-pickers": "^5.0.12",
     "@windmill/react-ui": "^0.6.0",
     "daisyui": "^2.31.0",
