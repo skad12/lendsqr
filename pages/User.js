@@ -17,7 +17,7 @@ const User = () => {
          <Nav />
           
           <div class="flex h-screen">
-  <div class="w-64 h-full ">
+  <div class="w-64 h-full hidden md:block ">
    
     <SideNav/>
   </div>

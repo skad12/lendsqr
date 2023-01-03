@@ -2,10 +2,13 @@ import {React, useState} from 'react';
 import Link from 'next/link';
 import { Avatar } from '@mui/material';
 import Dropdown from '../components/Dropdown';
+import SideNav from '../components/SideNav';
 
 
 export default function Nav() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  const menu = <SideNav />
 
   return (
     <div className="bg-white">
@@ -100,7 +103,8 @@ export default function Nav() {
                 />
               </svg>
             </button>
-            {isMenuOpen && (
+            {isMenuOpen && menu}
+            {/* {isMenuOpen && (
               <div className="absolute top-0 left-0 w-full">
                 <div className="p-5 bg-white border rounded shadow-sm">
                   <div className="flex items-center justify-between mb-4">
@@ -203,7 +207,7 @@ export default function Nav() {
                   </nav>
                 </div>
               </div>
-            )}
+            )} */}
           </div>
         </div>
       </div>
