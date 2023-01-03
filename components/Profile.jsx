@@ -1,7 +1,6 @@
 import React from 'react';
-import { Avatar } from '@material-tailwind/react';
 import Ratings from '../components/Ratings';
-import Image from 'next/image';
+
 
 function profile() {
     return (

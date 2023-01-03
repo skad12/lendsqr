@@ -22,6 +22,7 @@ const User = () => {
     <SideNav/>
   </div>
   <div class="flex-1 bg-gray-100 ">
+      
     <UserHeader />
     <TabUser />
   </div>
