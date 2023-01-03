@@ -10,30 +10,25 @@
   },
   "dependencies": {
     "@emotion/react": "^11.10.5",
-    "@emotion/styled": "^11.10.5",
     "@fontsource/roboto": "^4.5.8",
     "@headlessui/react": "^1.7.7",
     "@material-tailwind/react": "^1.2.4",
-    "@material-ui/pickers": "^3.3.10",
     "@mui/icons-material": "^5.11.0",
     "@mui/material": "^5.11.3",
     "@mui/styled-engine-sc": "^5.11.0",
-    "@mui/x-date-pickers": "^5.0.12",
-    "@windmill/react-ui": "^0.6.0",
     "daisyui": "^2.31.0",
-    "next": "12.3.1",
+    "next": "latest",
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "react-icons": "^4.7.1",
     "semantic-ui-css": "^2.5.0",
     "semantic-ui-react": "^2.1.3",
-    "styled-components": "^5.3.6",
-    "tw-elements": "^1.0.0-alpha13"
+    "styled-components": "^5.3.6"
   },
   "devDependencies": {
     "autoprefixer": "^10.4.12",
     "eslint": "8.25.0",
-    "eslint-config-next": "12.3.1",
+    "eslint-config-next": "^12.0.4",
     "postcss": "^8.4.18",
     "tailwindcss": "^3.1.8"
   }
