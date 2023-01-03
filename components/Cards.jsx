@@ -1,8 +1,5 @@
 import React from 'react';
 
-
-
-
 function Cards() {
     return ( 
 
@@ -17,7 +14,7 @@ function Cards() {
 </svg>
 </div>
     <div className='text-xs text-gray-500 font-bold'>USERS</div>
-      <div className='text-xl font-bold text-blue-600'>2,453</div>
+      <div className='text-xl font-bold text-blue-900'>2,453</div>
 </div> 
 
 <div className="card card-body w-60 h-36 border rounded-lg bg-white p-6 space-y-4 shadow-md">
@@ -28,7 +25,7 @@ function Cards() {
 
 </div>
     <div className='text-xs text-gray-500 font-bold'>ACTIVE USERS</div>
-      <div className='text-xl font-bold text-blue-800'>2,453</div>
+      <div className='text-xl font-bold text-blue-900'>2,453</div>
 </div> 
 
 <div className="card card-body w-60 h-36 border rounded-lg bg-white p-6 space-y-4 shadow-md">
@@ -39,7 +36,7 @@ function Cards() {
 
 </div>
     <div className='text-xs text-gray-500 font-bold'>USERS WITH LOANS</div>
-      <div className='text-xl font-bold text-blue-800'>12,453</div>
+      <div className='text-xl font-bold text-blue-900'>12,453</div>
 </div> 
 
 <div className="card card-body w-60 h-36 border rounded-lg bg-white p-6 space-y-4 shadow-md">
@@ -49,7 +46,7 @@ function Cards() {
 </svg>
 </div>
     <div className='text-xs text-gray-500 font-bold'>USERS WITH SAVINGS</div>
-      <div className='text-xl font-bold text-blue-800'>102,453</div>
+      <div className='text-xl font-bold text-blue-900'>102,453</div>
 </div> 
 </div>
 </div>
