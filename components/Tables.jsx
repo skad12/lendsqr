@@ -1,6 +1,6 @@
 import React from 'react';
 import Dots from '../components/Dots';
-import Filter from "../components/Filter";
+
 
 
 function Tables() {
