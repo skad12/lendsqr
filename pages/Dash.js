@@ -16,11 +16,11 @@ const Dash = () => {
             </div>
          
           
-          <div class="flex h-screen">
-  <div class="w-64 h-full hidden md:block ">
+          <div className="flex h-screen">
+  <div className="w-64 h-full hidden md:block ">
     <SideNav/>
   </div>
-  <div class="flex-1 bg-gray-100 ">
+  <div className="flex-1 bg-gray-100 ">
     <Cards />
     <Tables />
     <Pagination />

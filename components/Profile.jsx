@@ -22,7 +22,7 @@ function profile() {
 
 
             <div className='p-5 text-gray-700 text-sm'>
-                <span clas>User&apos;s Tier</span>
+                <span className>User&apos;s Tier</span>
                 <Ratings />
             </div>
 

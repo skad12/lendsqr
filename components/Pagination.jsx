@@ -6,7 +6,7 @@ function Pagination() {
         <>
         <div className='pt-4 px-10 font-light  flex text-sm  justify-between'>
 <div className='items-baseline flex space-x-2'>
-    <label for='pages' className='text-sm'><b>Showing</b></label>
+    <label  className='text-sm'><b>Showing</b></label>
     <select name='number' className='bg-gray-200 rounded-lg h-7 '>
         <option value=''>100</option>
         <option value='one'>1</option>
